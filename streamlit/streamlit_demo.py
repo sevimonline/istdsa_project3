@@ -41,7 +41,7 @@ st.markdown("- **price_per_sqft**: Price per square feet of the house")
 st.markdown("- **elevation**: Elevation(ft) value where the house is located")
 
 # Pandasla veri setini okuyalım
-df = pd.read_pickle("train_df.pkl")
+df = pd.read_pickle("streamlit/train_df.pkl")
 
 # Küçük bir düzenleme :)
 df.beds = df.beds.astype(int)
