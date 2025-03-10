@@ -68,7 +68,7 @@ elevation = st.sidebar.slider("Elevation of House (ft)", min_value=0, max_value=
 # Pickle kütüphanesi kullanarak eğitilen modelin tekrardan kullanılması
 from joblib import load
 
-logreg_model = load('logreg_model.pkl')
+logreg_model = load('streamlit/logreg_model.pkl')
 
 input_df = pd.DataFrame({
     'elevation': [elevation],
